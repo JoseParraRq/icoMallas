@@ -3,15 +3,15 @@ import { createUser, deleteUser, getUserById, getUsers, updateUser } from "../co
 
 const router = Router();
 
-router.get('/users', getUsers)
+router.get('/clientes/consultar', getUsers)
 
-router.get('/users/:id', getUserById)
+router.get('/clientes/:id', getUserById)
 
-router.post('/users', createUser)
+router.post('/clientes/crear', createUser)
 
-router.put('/users/:id', updateUser)
+router.patch('/clientes/actualizar/:id', updateUser)
 
-router.delete('/users/:id', deleteUser)
+router.delete('/clientes/borrar/:id', deleteUser)
 export default router;
 
 
